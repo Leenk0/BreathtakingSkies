@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blurrycaptured</title>
+    <link rel="stylesheet" href="blurry.css">
+</head>
+<body>
+
+    <!-- Top Section - Index -->
+    <header>
+        <h1>Blurrycaptured</h1>
+        <p>   </p>
+    </header>
+
+    <!-- Middle Section - Centered Folders -->
+    <main>
+        <div class="folder-container" onclick="openModal('2.png')">
+            <img src="2.png" alt="one">
+        </div>
+        <div class="folder-container" onclick="openModal('4.png')">
+            <img src="4.png" alt="two">
+        </div>
+        <div class="folder-container" onclick="openModal('6.png')">
+            <img src="6.png" alt="three">
+        </div>
+        <!-- Add more folders as needed -->
+    </main>
+
+    <!-- Modal for Large Image -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" style="width:100%">
+        </div>
+    </div>
+
+    <!-- Bottom Section - Social Media Links -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/whiteebluee._/" target="_blank">Instagram</a>
+            <!-- Add more social media links as needed -->
+        </div>
+    </footer>
+
+    <script src="blurry.js"></script>
+</body>
+</html>

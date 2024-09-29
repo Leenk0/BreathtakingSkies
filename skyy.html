@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breathtaking Skies</title>
+    <link rel="stylesheet" href="skyy.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Breathtaking Skies</h1>
+        <p>In the vastness above, we find our place below</p>
+        <p class="credit">Visual stories by Leen</p>
+
+        <!-- YouTube Link with Icon -->
+        <div class="social-links">
+            <a href="https://youtube.com/@blurryymee?si=Fkp_lX6fWsYbkssi" target="_blank">
+                <img src="images/youtube.png" alt="YouTube" class="social-icon">
+            </a>
+        </div>
+    </header>
+
+    <!-- Image Gallery Section -->
+    <section class="gallery-container">
+        <div id="sky-gallery">
+            <!-- Images will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Modal for Large Image -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" alt="Large Sky Image">
+        </div>
+    </div>
+
+    <script src="skyy.js"></script>
+</body>
+</html>

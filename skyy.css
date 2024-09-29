@@ -1,0 +1,202 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: #E0F7FA; /* Light cute blue background */
+    color: #333; /* Softer, dark color for text */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* Enhanced Header Styles */
+header {
+    padding: 80px 20px;
+    background-color: #B3E5FC; /* Lighter blue for header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #81D4FA; /* Soft blue border */
+}
+
+h1 {
+    font-size: 4rem;
+    color: #01579B; /* Darker blue text */
+    margin: 0 0 15px 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.8rem;
+    color: #0277BD; /* Light blue text for subtitle */
+    margin: 0;
+    letter-spacing: 1.2px;
+    font-style: italic;
+}
+
+/* New Styling for Credit Text */
+.credit {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #01579B;
+    font-weight: 600; /* Slightly bolder to make it stand out */
+    font-style: normal; /* No italics for a professional look */
+}
+
+/* YouTube Icon Link */
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+}
+
+.social-icon {
+    width: 40px; /* Set the desired size */
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+/* Gallery styles */
+.gallery-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#sky-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Image container - Updated for square size */
+.img-container {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    width: 250px; /* Fixed width */
+    height: 250px; /* Fixed height to create a square */
+}
+
+.img-container:hover {
+    transform: scale(1.05);
+}
+
+/* Ensure gallery images fit in square containers */
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the container, cropping if necessary */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-container:hover .gallery-image {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Hover overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+/* Modal styles - Full image fit */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+}
+
+.close {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+
+.close:hover {
+    color: #bbb;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    #sky-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    #sky-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}

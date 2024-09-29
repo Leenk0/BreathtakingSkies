@@ -1,6 +1,5 @@
 # Breathtaking Skies
 
-![Breathtaking Skies Logo](images/sky_icon.png)
 
 **Breathtaking Skies** is a serene and beautiful gallery website showcasing captivating images of the sky in various states — from sunrise to sunset, clouds to clear blue skies. The site features a modern, minimalistic design to help visitors immerse themselves in the vastness and beauty of the skies.
 

@@ -21,5 +21,4 @@ You can visit the live site here: [Breathtaking Skies](https://leenk0.github.io/
 - **JavaScript**: Used for dynamic interactions, including image modal displays.
 - **GitHub Pages**: The site is hosted using GitHub Pages.
 
-## File Structure
 
